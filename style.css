@@ -1,0 +1,18 @@
+:root { font: 100%/1.6 system-ui,sans-serif; background: #eff4f7; color: #172733; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { background: #183544; }
+nav, main, footer { max-width: 74rem; padding: 1rem clamp(1rem,4vw,2.5rem); margin: auto; }
+nav { display: flex; justify-content: space-between; }
+nav a { color: white; font-weight: 700; }
+a { color: #07566e; text-underline-offset: .18em; }
+h1 { font-size: clamp(1.8rem,5vw,3.1rem); line-height: 1.16; margin: 1rem 0 .55rem; }
+h2 { font-size: 1.35rem; margin: 0; line-height: 1.25; }
+.cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin-top: 1.25rem; }
+article { padding: 1.1rem; background: white; border: 1px solid #c5d7e0; border-radius: .75rem; overflow-wrap: anywhere; }
+.version { color: #425966; margin: .45rem 0 .8rem; }
+dt { font-weight: 700; border-top: 1px solid #dbe6eb; padding-top: .55rem; }
+dd { margin: .15rem 0 .65rem; }
+.links { font-size: .94rem; }
+:focus-visible { outline: 3px solid #107390; outline-offset: 3px; }
+@media(max-width: 52rem) { .cards { grid-template-columns: 1fr; } }
